@@ -63,7 +63,7 @@ public class SwiftPrivacyScreenPlugin: NSObject, FlutterPlugin {
             if ( !(privacyImageName ?? "").isEmpty) {
                 let logoView = UIImageView(image: UIImage(named: privacyImageName!))
                 logoView.frame = window.bounds
-                logoView.contentMode = .center
+                logoView.contentMode = .scaleAspectFill
                 privacyUIView!.addSubview(logoView)
             }
             
